@@ -23,13 +23,14 @@
 # RoyBarina <roybarina@users.noreply.translate.codeberg.org>, 2025.
 # ngf <ngf@noreply.codeberg.org>, 2025.
 # return42 <return42@noreply.codeberg.org>, 2025.
+# omeritzics <omeritzics@noreply.codeberg.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version:  searx\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-02-22 13:48+0000\n"
-"PO-Revision-Date: 2025-12-11 17:10+0000\n"
-"Last-Translator: return42 <return42@noreply.codeberg.org>\n"
+"POT-Creation-Date: 2026-03-24 18:43+0000\n"
+"PO-Revision-Date: 2026-03-11 17:29+0000\n"
+"Last-Translator: omeritzics <omeritzics@noreply.codeberg.org>\n"
 "Language: he\n"
 "Language-Team: Hebrew "
 "<https://translate.codeberg.org/projects/searxng/searxng/he/>\n"
@@ -81,7 +82,7 @@ msgid "videos"
 msgstr "וידאו"
 
 #. CATEGORY_NAMES['RADIO']
-#: searx/engines/radio_browser.py:142 searx/searxng.msg
+#: searx/engines/radio_browser.py:146 searx/searxng.msg
 msgid "radio"
 msgstr "רדיו"
 
@@ -188,7 +189,7 @@ msgstr "זמינות"
 #. BRAND_CUSTOM_LINKS['ABOUT']
 #: searx/searxng.msg searx/templates/simple/base.html:46
 msgid "About"
-msgstr "אודות"
+msgstr "על אודות"
 
 #. WEATHER_TERMS['AVERAGE TEMP.']
 #: searx/searxng.msg
@@ -555,7 +556,7 @@ msgstr "נענו"
 msgid "No item found"
 msgstr "לא נמצא פריט"
 
-#: searx/engines/qwant.py:296
+#: searx/engines/qwant.py:291
 #: searx/templates/simple/result_templates/images.html:23 searx/webapp.py:329
 msgid "Source"
 msgstr "מקור"
@@ -651,6 +652,11 @@ msgstr "מייצרת ערכים אקראיים שונים"
 msgid "Compute {func} of the arguments"
 msgstr "חשב {func} של הארגומנטים"
 
+#: searx/engines/boardreader.py:107
+#, python-brace-format
+msgid "Posted by {author}"
+msgstr ""
+
 #: searx/engines/openstreetmap.py:155
 msgid "Show route in map .."
 msgstr "הצג מסלול במפה .."
@@ -664,19 +670,19 @@ msgstr "{title} (OBSOLETE)"
 msgid "This entry has been superseded by"
 msgstr "רשומה זו הוחלפה על ידי"
 
-#: searx/engines/qwant.py:298
+#: searx/engines/qwant.py:293
 msgid "Channel"
 msgstr "ערוץ"
 
-#: searx/engines/radio_browser.py:144
+#: searx/engines/radio_browser.py:148
 msgid "bitrate"
 msgstr "קצב נתונים"
 
-#: searx/engines/radio_browser.py:145
+#: searx/engines/radio_browser.py:149
 msgid "votes"
 msgstr "הצבעות"
 
-#: searx/engines/radio_browser.py:146
+#: searx/engines/radio_browser.py:150
 msgid "clicks"
 msgstr "לחיצות"
 
@@ -711,15 +717,15 @@ msgstr ""
 msgid "The image could not be downloaded."
 msgstr "אי אפשר להוריד את תמונה זו."
 
-#: searx/engines/zlibrary.py:78
+#: searx/engines/zlibrary.py:79
 msgid "Language"
 msgstr "שפה"
 
-#: searx/engines/zlibrary.py:79
+#: searx/engines/zlibrary.py:80
 msgid "Book rating"
 msgstr "דירוג ספרים"
 
-#: searx/engines/zlibrary.py:80
+#: searx/engines/zlibrary.py:81
 msgid "File quality"
 msgstr "איכות קובץ"
 
@@ -733,7 +739,7 @@ msgstr "מסנן תוצאות onion שמופיעות ברשימת השחורה �
 
 #: searx/plugins/calculator.py:25
 msgid "Calculator"
-msgstr ""
+msgstr "מחשבון"
 
 #: searx/plugins/calculator.py:26
 msgid "Parses and solves mathematical expressions."
@@ -805,11 +811,11 @@ msgstr "סוכן המשתמש שלך הוא: "
 
 #: searx/plugins/time_zone.py:33
 msgid "Timezones plugin"
-msgstr ""
+msgstr "תוסף אזורי זמן"
 
 #: searx/plugins/time_zone.py:34
 msgid "Display the current time on different time zones."
-msgstr ""
+msgstr "הצגת השעה הנוכחית באזורי זמן שונים."
 
 #: searx/plugins/tor_check.py:41
 msgid "Tor check plugin"
@@ -895,7 +901,7 @@ msgstr "קוד מקור"
 msgid "Issue tracker"
 msgstr "דווח על בעיה"
 
-#: searx/templates/simple/base.html:71 searx/templates/simple/stats.html:18
+#: searx/templates/simple/base.html:71 searx/templates/simple/stats.html:17
 msgid "Engine stats"
 msgstr "סטטיסטיקת מנוע חיפוש"
 
@@ -935,26 +941,6 @@ msgstr "מחבר"
 msgid "cached"
 msgstr "מוטמן"
 
-#: searx/templates/simple/new_issue.html:60
-msgid "Start submitting a new issue on GitHub"
-msgstr "התחל להגיש גיליון חדש ב- GitHub"
-
-#: searx/templates/simple/new_issue.html:62
-msgid "Please check for existing bugs about this engine on GitHub"
-msgstr "בדוק אם קיימים באגים לגבי מנוע זה ב-GitHub"
-
-#: searx/templates/simple/new_issue.html:65
-msgid "I confirm there is no existing bug about the issue I encounter"
-msgstr "אני מאשר שאין באג קיים לגבי הבעיה שאני נתקל בה"
-
-#: searx/templates/simple/new_issue.html:67
-msgid "If this is a public instance, please specify the URL in the bug report"
-msgstr "אם זה מופע ציבורי, אנא ציין את כתובת האתר בדוח הבאג"
-
-#: searx/templates/simple/new_issue.html:68
-msgid "Submit a new issue on Github including the above information"
-msgstr "שלח בעיה חדשה ב-Github הכוללת את המידע לעיל"
-
 #: searx/templates/simple/preferences.html:65
 msgid "No HTTPS"
 msgstr "בלי HTTPS"
@@ -974,17 +960,17 @@ msgid "!bang for its categories"
 msgstr "!bang לקטגוריות"
 
 #: searx/templates/simple/preferences.html:102
-#: searx/templates/simple/stats.html:64
+#: searx/templates/simple/stats.html:63
 msgid "Median"
 msgstr "חציון"
 
 #: searx/templates/simple/preferences.html:103
-#: searx/templates/simple/stats.html:70
+#: searx/templates/simple/stats.html:69
 msgid "P80"
 msgstr "P80"
 
 #: searx/templates/simple/preferences.html:104
-#: searx/templates/simple/stats.html:76
+#: searx/templates/simple/stats.html:75
 msgid "P95"
 msgstr "P95"
 
@@ -1024,7 +1010,7 @@ msgstr "פרטיות"
 
 #: searx/templates/simple/preferences.html:235
 msgid "Engines"
-msgstr "מנועים"
+msgstr "מנועי חיפוש"
 
 #: searx/templates/simple/preferences.html:237
 msgid "Currently used search engines"
@@ -1065,93 +1051,93 @@ msgstr "הצג את העמוד הראשי"
 #: searx/templates/simple/search.html:9
 #: searx/templates/simple/simple_search.html:5
 msgid "Search for..."
-msgstr "הקלד מילות חיפוש..."
+msgstr "חיפוש..."
 
 #: searx/templates/simple/search.html:10
 #: searx/templates/simple/simple_search.html:6
 msgid "clear"
-msgstr "נקה"
+msgstr "ניקוי"
 
 #: searx/templates/simple/search.html:11
 #: searx/templates/simple/simple_search.html:7
 msgid "search"
-msgstr "חפש"
+msgstr "חיפוש"
 
-#: searx/templates/simple/stats.html:21
+#: searx/templates/simple/stats.html:20
 msgid "There is currently no data available. "
 msgstr "אין כעת מידע זמין. "
 
 #: searx/templates/simple/preferences/engines.html:24
-#: searx/templates/simple/stats.html:25
+#: searx/templates/simple/stats.html:24
 msgid "Engine name"
-msgstr "שם מנוע"
+msgstr "שם מנוע חיפוש"
 
-#: searx/templates/simple/stats.html:26
+#: searx/templates/simple/stats.html:25
 msgid "Scores"
 msgstr "דירוג"
 
-#: searx/templates/simple/stats.html:27
+#: searx/templates/simple/stats.html:26
 msgid "Result count"
 msgstr "ספירת תוצאות"
 
 #: searx/templates/simple/elements/engines_msg.html:7
 #: searx/templates/simple/preferences/engines.html:31
-#: searx/templates/simple/stats.html:28
+#: searx/templates/simple/stats.html:27
 msgid "Response time"
 msgstr "זמן תגובה"
 
 #: searx/templates/simple/preferences/engines.html:35
-#: searx/templates/simple/stats.html:29
+#: searx/templates/simple/stats.html:28
 msgid "Reliability"
-msgstr "מהימנות"
+msgstr "אמינות"
 
-#: searx/templates/simple/stats.html:59
+#: searx/templates/simple/stats.html:58
 msgid "Total"
 msgstr "סה״כ"
 
-#: searx/templates/simple/stats.html:60
+#: searx/templates/simple/stats.html:59
 msgid "HTTP"
 msgstr "HTTP"
 
-#: searx/templates/simple/stats.html:61
+#: searx/templates/simple/stats.html:60
 msgid "Processing"
 msgstr "עיבוד"
 
-#: searx/templates/simple/stats.html:99
+#: searx/templates/simple/stats.html:98
 msgid "Warnings"
 msgstr "אזהרות"
 
-#: searx/templates/simple/stats.html:99
+#: searx/templates/simple/stats.html:98
 msgid "Errors and exceptions"
 msgstr "שגיאות וחריגים"
 
-#: searx/templates/simple/stats.html:105
+#: searx/templates/simple/stats.html:104
 msgid "Exception"
 msgstr "חריג"
 
-#: searx/templates/simple/stats.html:107
+#: searx/templates/simple/stats.html:106
 msgid "Message"
 msgstr "הודעה"
 
-#: searx/templates/simple/stats.html:109
+#: searx/templates/simple/stats.html:108
 msgid "Percentage"
 msgstr "אחוז"
 
-#: searx/templates/simple/stats.html:111
+#: searx/templates/simple/stats.html:110
 msgid "Parameter"
 msgstr "פרמטר"
 
 #: searx/templates/simple/result_templates/code.html:29
 #: searx/templates/simple/result_templates/file.html:24
-#: searx/templates/simple/stats.html:119
+#: searx/templates/simple/stats.html:118
 msgid "Filename"
 msgstr "שם קובץ"
 
-#: searx/templates/simple/stats.html:120
+#: searx/templates/simple/stats.html:119
 msgid "Function"
 msgstr "פונקציה"
 
-#: searx/templates/simple/stats.html:121
+#: searx/templates/simple/stats.html:120
 msgid "Code"
 msgstr "קוד"
 
@@ -1434,11 +1420,11 @@ msgstr ""
 
 #: searx/templates/simple/preferences/engines.html:15
 msgid "Enable all"
-msgstr "אפשר הכל"
+msgstr "לאפשר הכול"
 
 #: searx/templates/simple/preferences/engines.html:16
 msgid "Disable all"
-msgstr "בטל הכל"
+msgstr "להשבית הכול"
 
 #: searx/templates/simple/preferences/engines.html:25
 msgid "!bang"
@@ -1473,6 +1459,8 @@ msgstr ""
 #: searx/templates/simple/preferences/footer.html:3
 msgid "These cookies serve your sole convenience; we don't use them to track you."
 msgstr ""
+"קובצי העוגיות האלה נועדו אך ורק בשביל הנוחות שלך – אנחנו לא משתמשים בהם "
+"למעקב אחריך."
 
 #: searx/templates/simple/preferences/footer.html:6
 msgid "Save"
@@ -1540,11 +1528,11 @@ msgstr ""
 
 #: searx/templates/simple/preferences/results_on_new_tab.html:2
 msgid "Results in new tabs"
-msgstr ""
+msgstr "תוצאות בלשוניות חדשות"
 
 #: searx/templates/simple/preferences/results_on_new_tab.html:14
 msgid "Open result links in new browser tabs"
-msgstr ""
+msgstr "פתיחת קישורי התוצאות בלשוניות דפדפן חדשות"
 
 #: searx/templates/simple/preferences/safesearch.html:20
 msgid "Filter content"
@@ -1566,7 +1554,7 @@ msgstr "מוטיב"
 
 #: searx/templates/simple/preferences/theme.html:14
 msgid "Change the layout of SearXNG"
-msgstr ""
+msgstr "שינוי הפריסה של SearXNG"
 
 #: searx/templates/simple/preferences/theme.html:19
 msgid "Theme style"
@@ -1649,7 +1637,7 @@ msgstr "סוג"
 
 #: searx/templates/simple/result_templates/file.html:67
 msgid "Download"
-msgstr ""
+msgstr "הורדה"
 
 #: searx/templates/simple/result_templates/images.html:20
 msgid "Resolution"
@@ -2361,4 +2349,19 @@ msgstr "הסתר וידאו"
 
 #~ msgid "Comment(s)"
 #~ msgstr "הערות"
+
+#~ msgid "Start submitting a new issue on GitHub"
+#~ msgstr "התחל להגיש גיליון חדש ב- GitHub"
+
+#~ msgid "Please check for existing bugs about this engine on GitHub"
+#~ msgstr "בדוק אם קיימים באגים לגבי מנוע זה ב-GitHub"
+
+#~ msgid "I confirm there is no existing bug about the issue I encounter"
+#~ msgstr "אני מאשר שאין באג קיים לגבי הבעיה שאני נתקל בה"
+
+#~ msgid "If this is a public instance, please specify the URL in the bug report"
+#~ msgstr "אם זה מופע ציבורי, אנא ציין את כתובת האתר בדוח הבאג"
+
+#~ msgid "Submit a new issue on Github including the above information"
+#~ msgstr "שלח בעיה חדשה ב-Github הכוללת את המידע לעיל"
 
